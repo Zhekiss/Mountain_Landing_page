@@ -1,0 +1,8 @@
+.hero-section {
+  width: 100%;
+  height: auto;
+}
+
+.main-hero-img, .bg-hero-img {
+  object-fit: contain;
+}

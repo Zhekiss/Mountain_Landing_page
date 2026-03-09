@@ -1,0 +1,21 @@
+.nav-wrapper {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  justify-content: space-around;
+}
+
+.nav-wrapper .left {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-wrapper ul {
+  display: flex;
+  flex-direction: row;
+  padding-right: 10px;
+}
+
+.nav-wrapper .nav-link {
+
+}

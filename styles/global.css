@@ -21,9 +21,10 @@
   --third-family: "Inter", sans-serif;
 }
 
-body {
+* {
 	box-sizing: border-box;
-	width: 100%;
+	padding: 0;
+	margin: 0;
 }
 
 a {
@@ -33,3 +34,4 @@ a {
 li {
 	list-style: none;
 }
+

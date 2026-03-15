@@ -2,8 +2,15 @@
   display: flex;
   flex-direction: row;
   max-width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  color: var(--neutral-white);
+  padding: 32px 164px;
+  border-bottom: 1px solid var(--neutral-white);
+}
+
+.nav-wrapper a {
+  color: var(--neutral-white);
 }
 
 .nav-wrapper .left {
@@ -11,27 +18,46 @@
   flex-direction: row;
   gap: 8px;
   align-items: center;
+  padding-right: 24px;
 }
 
 .nav-wrapper .left h3 {
   white-space: nowrap;
-  margin: 0;
   font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 24px;
+  color: var(--neutral-white);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
-.nav-wrapper ul {
+.middle {
   display: flex;
+  height: 100%;
   flex-direction: row;
   padding-right: 10px;
   column-gap: 48px;
   font-family: var(--second-family);
 }
 
+.nav-item {
+  cursor: pointer;
+  position: relative;
+  border-bottom: 3px solid transparent;
+  transition: ease-out 0.25s;
+}
 
-.nav-wrapper .right {
+.nav-item:hover {
+  border-bottom: 3px solid var(--neutral-white);
+}
+
+.nav-wrapper .youtube-button {
   display: flex;
-  flex-direction: column;
   gap: 16px;
   align-items: center;
   font-family: var(--second-family);
+  padding: 8px 16px 4px 8px;
+  background-color: rgba(0, 0, 0, 40%);
+  border-radius: 12px;
+  cursor: pointer;
 }

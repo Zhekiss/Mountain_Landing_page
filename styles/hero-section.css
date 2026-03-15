@@ -1,0 +1,33 @@
+.hero-contents {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.top-hero-lines {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.screaming-line,
+.screaming-line2 {
+  word-wrap: none;
+  mix-blend-mode: overlay;
+  z-index: -11;
+}
+
+.screaming-line {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.screaming-line2 {
+  font-size: 105px;
+  font-weight: 800;
+}
+
+.play-button a {
+  fill: rgba(255, 255, 255, 0.2);
+  max-width: 136px;
+}

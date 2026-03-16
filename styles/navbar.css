@@ -21,14 +21,14 @@
   padding-right: 24px;
 }
 
-.nav-wrapper .left h3 {
+.nav-wrapper .left h4 {
   white-space: nowrap;
   font-family: var(--font-family);
   font-weight: 800;
   font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
   color: var(--neutral-white);
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
 }
 
 .middle {
@@ -45,9 +45,13 @@
   position: relative;
   border-bottom: 3px solid transparent;
   transition: ease-out 0.25s;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .nav-item:hover {
+  font-size: 20px;
+  font-weight: 500;
   border-bottom: 3px solid var(--neutral-white);
 }
 
@@ -56,7 +60,7 @@
   gap: 16px;
   align-items: center;
   font-family: var(--second-family);
-  padding: 8px 16px 4px 8px;
+  padding: 8px 16px 8px 8px;
   background-color: rgba(0, 0, 0, 40%);
   border-radius: 12px;
   cursor: pointer;

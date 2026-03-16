@@ -19,12 +19,14 @@
 
 .screaming-line {
   font-size: 56px;
+  line-height: 64px;
   font-weight: 700;
 }
 
 .screaming-line2 {
-  font-size: 105px;
-  font-weight: 800;
+  font-size: 156px;
+  font-weight: 900;
+  line-height: 100%;
 }
 
 .play-button a {

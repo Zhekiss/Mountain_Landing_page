@@ -14,8 +14,9 @@
   left: 0;
   width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit:inherit;
   z-index: -10;
+  transform: scale3d(12);
 }
 
 .bg-hero-img {

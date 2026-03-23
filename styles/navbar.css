@@ -7,6 +7,7 @@
   color: var(--neutral-white);
   padding: 32px 164px;
   border-bottom: 1px solid var(--neutral-white);
+  height: 112px;
 }
 
 .nav-wrapper a {
@@ -37,29 +38,32 @@
   flex-direction: row;
   padding-right: 10px;
   column-gap: 48px;
+  align-items: center;
   font-family: var(--second-family);
 }
 
-.nav-item {
+.nav-item a{
   cursor: pointer;
   position: relative;
   border-bottom: 3px solid transparent;
   transition: ease-out 0.25s;
+  font-family: var(--second-family);
   font-size: 18px;
   font-weight: 400;
 }
 
-.nav-item:hover {
+.nav-item a:hover {
   font-size: 20px;
   font-weight: 500;
   border-bottom: 3px solid var(--neutral-white);
 }
 
-.nav-wrapper .youtube-button {
+.nav-wrapper .youtube-button{
   display: flex;
   gap: 16px;
   align-items: center;
   font-family: var(--second-family);
+  font-size: 20px;
   padding: 8px 16px 8px 8px;
   background-color: rgba(0, 0, 0, 40%);
   border-radius: 12px;

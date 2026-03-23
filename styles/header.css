@@ -7,19 +7,19 @@
   font-family: var(--second-family);
 }
 
-.bg-hero-img,
-.main-hero-img {
+.main-hero-img-down,
+.main-hero-img-up {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: auto;
-  object-fit:inherit;
+  object-fit:cover;
   z-index: -10;
   transform: scale3d(12);
 }
 
-.bg-hero-img {
+.main-hero-img-down {
   mix-blend-mode:overlay;
   z-index: -15;
 }

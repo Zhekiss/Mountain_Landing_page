@@ -5,9 +5,9 @@
   justify-content: space-between;
   align-items: center;
   color: var(--neutral-white);
-  padding: 32px 164px;
+  padding: 20px 140px;
   border-bottom: 1px solid var(--neutral-white);
-  height: 112px;
+  height:min-content;
 }
 
 .nav-wrapper a {
@@ -26,10 +26,14 @@
   white-space: nowrap;
   font-family: var(--font-family);
   font-weight: 800;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
   color: var(--neutral-white);
+}
+
+.nav-wrapper .left img{
+  transform: scale(0.8);
 }
 
 .middle {
@@ -43,17 +47,18 @@
 }
 
 .nav-item a{
+  display: inline-block;
   cursor: pointer;
   position: relative;
   border-bottom: 3px solid transparent;
   transition: ease-out 0.25s;
   font-family: var(--second-family);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
 }
 
 .nav-item a:hover {
-  font-size: 20px;
+  transform: scale(1.1);
   font-weight: 500;
   border-bottom: 3px solid var(--neutral-white);
 }
@@ -63,9 +68,18 @@
   gap: 16px;
   align-items: center;
   font-family: var(--second-family);
-  font-size: 20px;
-  padding: 8px 16px 8px 8px;
+  font-size: 16px;
+  padding: 4px 8px 4px 4px;
   background-color: rgba(0, 0, 0, 40%);
   border-radius: 12px;
   cursor: pointer;
+  transition: ease-out 0.25s;
+}
+
+.nav-wrapper .youtube-button:hover {
+  transform: scale(1.1);
+}
+
+.nav-wrapper .youtube-button img {
+  transform: scale(0.8);
 }

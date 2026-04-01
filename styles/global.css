@@ -25,10 +25,18 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+	color: var(--neutral-white);
 }
 
 body {
 	box-sizing: border-box;
+	/* background-color: var(--neutral-black); */
+	background-image: 
+		url(/images/Mountain-Image.png),url(/images/hero_section2.png);
+	background-origin: padding-box;
+	backface-visibility: hidden;
+	background-repeat: no-repeat;
+	background-size: 100% auto, 100% auto;
 }
 a {
 	text-decoration: none;

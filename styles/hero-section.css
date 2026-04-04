@@ -133,7 +133,7 @@
     margin-bottom: 70px;
     cursor: pointer;
 
-    background-image: url(/images/Play-Button.svg);
+    background-image: url(../icons/play-button.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 55%;

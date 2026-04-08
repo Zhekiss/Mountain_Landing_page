@@ -21,7 +21,7 @@
   align-items: center;
   padding-right: 24px;
 
-  h4 {
+  p {
     white-space: nowrap;
     font-family: var(--font-family);
     font-weight:700;
@@ -105,7 +105,7 @@
     align-items: center;
     padding-right: 24px;
 
-    h4 {
+    p {
       white-space: nowrap;
       font-family: var(--font-family);
       font-weight:700;
@@ -161,7 +161,7 @@
     transition: ease-out 0.25s;
 
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
   }
 }

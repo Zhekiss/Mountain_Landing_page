@@ -2,6 +2,7 @@
   background-color: var(--neutral-black);
   padding-left: 130px;
   padding-right: 130px;
+  padding-bottom: 170px;
 }
 
 .facilities__nav-bar {
@@ -67,3 +68,78 @@
   }
 }
 
+.facilities__services-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2px;
+}
+
+.far-left-card {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.far-right-card {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.facilities__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--neutral-dark);
+  width: 421px;
+  height: 420px;
+  padding: 50px 0px 40px 40px;
+
+  .service__card-num  {
+    font-family: var(--font-family);
+    font-weight: 500;
+    line-height: 100%;
+    color:#FFFFFF;
+    opacity: 20%;
+    font-size: 90px;
+  }
+
+  .service-card__name-and-details {
+    p {
+      font-family: var(--font-family);
+      color: var(--neutral-white);
+      font-weight: 700;
+      line-height: 60px;
+      font-size: 52px;
+      padding-bottom: 20px;
+    }
+
+    .service-card__action {
+      display: flex;
+      align-items: center;
+      font-family: var(--font-family);
+      color: var(--neutral-white);
+      font-weight: 500;
+      line-height: 100%;
+      font-size: 18px;
+
+      a {
+        padding-right: 10px;
+      }
+
+      img {
+        height: auto;
+        width: 40px;
+      }
+    }
+  }
+}
+
+.service-card__active {
+  transform: scaleY(1.2);
+  background-color: var(--neutral-dark-green);
+  border-radius: 12px;
+  a {
+    color: var(--primary-cyan);
+  }
+  box-shadow: 0px 30px 60px -10px var(--neutral-dark-green);
+}

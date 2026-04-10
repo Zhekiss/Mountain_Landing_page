@@ -235,7 +235,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0px var(--content-grid-lf-padding);
-    margin-bottom: 200px;
+    margin-bottom: 160px;
   }
   /* #region content-grid__left-column */
   .content-grid__left-col {

@@ -78,7 +78,7 @@
     font-size: 14px;
     font-weight: 400;
     color: var(--neutral-white);
-    font-family: 'Poppins';
+    font-family: var(--second-family);
     z-index: 2;
   }
 
@@ -131,7 +131,7 @@
   }
 
   .today-inBM-content .condition {
-    font-family: "Inter";
+    font-family: var(--third-family);
     font-weight: 500;
     font-size: 22px;
     color: var(--neutral-white);
@@ -228,7 +228,7 @@
 
 @media (width >= 1200px) {
   :root {
-    --content-grid-lf-padding: 110px;
+    --content-grid-lf-padding: 130px;
   }
 
   .content-grid {
@@ -307,7 +307,7 @@
     font-size: 14px;
     font-weight: 400;
     color: var(--neutral-white);
-    font-family: 'Poppins';
+    font-family: var(--second-family);
     z-index: 2;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
@@ -362,7 +362,7 @@
     }
   
     p{
-      font-family: "Inter";
+      font-family: var(--third-family);
       font-weight: 500;
       font-size: 26px;
       color: var(--neutral-white);
@@ -495,7 +495,7 @@
     padding-bottom: 20px;
 
     .schedule-card__label {
-      font-family: "Poppins";
+      font-family: var(--second-family);
       font-weight: 500;
       line-height: 28px;
       font-size: 16px;

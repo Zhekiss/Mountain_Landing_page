@@ -112,8 +112,7 @@
     padding: 0px 130px;
     gap: 0px;
     justify-content: space-between;
-    padding-bottom: 150px;
-
+    margin-bottom: 150px;
 
     .location-content__left-col {
       display: flex;

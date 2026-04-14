@@ -6,4 +6,5 @@ body {
 	background-origin: padding-box;
 	background-repeat: no-repeat;
 	background-size: 100% auto, 100% auto;
+	background-color: var(--neutral-black);
 }

@@ -8,7 +8,7 @@
 .facilities__nav-bar {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 130px;
+  padding-bottom: 90px;
 }
 
 .facilities__nav-left {
@@ -71,13 +71,30 @@
 .facilities__services-cards {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
-  gap: 2px;
+  gap: 1px;
 }
 
 .far-left-card {
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
+}
+
+.services-card__2nd {
+  position: relative;
+  overflow: hidden;
+  transition: ease-in-out 0.3s;
+  .service-card__biking-img {
+    object-fit: cover;
+    object-position: center;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    position: absolute;
+    right: -70px;
+    top: -40px;
+  }
 }
 
 .far-right-card {
@@ -135,11 +152,16 @@
 }
 
 .service-card__active {
-  transform: scaleY(1.2);
   background-color: var(--neutral-dark-green);
   border-radius: 12px;
+  height: 510px;
   a {
     color: var(--primary-cyan);
   }
-  box-shadow: 0px 30px 60px -10px var(--neutral-dark-green);
+  box-shadow: 0 40px 80px -20px var(--neutral-dark-green);
+
+  .service-card__biking-img{
+    width: 290px;
+    height: 290px;
+  }
 }

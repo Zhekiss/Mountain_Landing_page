@@ -6,68 +6,169 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/fonts-families.css">
-    <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/navbar.css">
-    <link rel="stylesheet" href="styles/hero-section.css">
-    <link rel="stylesheet" href="styles/content-box.css">
+    
+    <link rel="stylesheet" href="styles/main.css">
     
   </head>
   <header class="main-header">
-    <nav class="nav-wrapper">
-      <div class="left">
-        <img src="images/logo.svg" alt="Beau Montain">
-        <h4>Beau Mountain</h4>
+    <nav class="nav">
+      <div class="nav__brand">
+        <img src="icons/logo.svg" alt="Beau Montain">
+        <p>Beau Mountain</p>
       </div>
-      <ul class="middle">
-        <li class="nav-item"><a href="#home">Home</a></li>
-        <li class="nav-item"><a href="#package">Package</a></li>
-        <li class="nav-item"><a href="#ticket">Ticket</a></li>
-        <li class="nav-item"><a href="#about-us">About us</a></li>
-        <li class="nav-item"><a href="#contact-us">Contact Us</a></li>
-        <li class="nav-item"><a href="#blog">Blog</a></li>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#home">Home</a></li>
+        <li class="nav__item"><a href="#package">Package</a></li>
+        <li class="nav__item"><a href="#ticket">Ticket</a></li>
+        <li class="nav__item"><a href="#about-us">About us</a></li>
+        <li class="nav__item"><a href="#contact-us">Contact Us</a></li>
+        <li class="nav__item"><a href="#blog">Blog</a></li>
       </ul>
-      <div class="right">
-        <div class="youtube-button">
-          <img src="images/yt-Icon.svg"/>
+      <div class="nav__action">
+        <div class="btn-youtube">
+          <img src="icons/youtube-icon.svg"/>
           <a href="#youtube">Youtube</a>
         </div>
       </div>
     </nav>
-    <div class="hero-section">
-      <div class="top-hero-lines">
-        <h1 class="screaming-line">THE BEAUTY OF</h1>
-        <h1 class="screaming-line2">BEAU MOUNTAIN</h1>
-        <button class="play-button"></button>
+    <div class="hero">
+      <div class="hero__content">
+        <p class="hero__title">THE BEAUTY OF</p>
+        <h1 class="hero__subtitle">BEAU MOUNTAIN</h1>
+        <button class="hero__play-btn"></button>
       </div>
     </div>
   </header>
   <body>
-    <section class="content-box">
-      <div class="see-video-content">
-        <div class="left">
-          <img class="img1" src="images/see-video-Image.png">
-          <div class="svc-left-sv">
-            <a href="#video">See Video</a>
-            <img class="img2" src="images/Arrow-1.svg">
+    <section class="content-grid">
+      <div class="content-grid__left-col">
+        <div class="video-card">
+          <div class="video-card__media">
+            <img class="video-card__img" src="images/see-video-image.png">
+            <div class="video-card__action">
+              <a href="#video">See Video<img src="icons/arrow.svg" alt="Details"></a>
+            </div>
+            <div class="video-card__badge">
+              <span>Our Facilities</span>
+            </div>
           </div>
-          <div class="svc-left-of">
-            <span>Our Facilities</span>
+          <div class="video-card__body">
+            <h3>Look deep into Beau</h3>
+            <h4>The beautiful mountain view</h4>
+            <p>A mountain is a part of the earth's crust that is higher than the area around it. Mountains usually have steep sides that significantly expose the bedrock.</p>
           </div>
         </div>
-        <div class="right">
-          <h3>Look deep into Beau</h3>
-          <h4>The beautiful mountain view</h4>
-          <p>A mountain is a part of the earth's crust that is higher than the area around it. Mountains usually have steep sides that significantly expose the bedrock.</p>
+        <div class="weather-widget">
+          <h3>Today in<br>Beau Mountain</h3>
+          <p>Condition</p>
+          <div class="weather-widget__status">
+            <img src="icons/day2-weather.svg">
+            <p>Cloudy sunny</p>
+          </div>
         </div>
       </div>
-      <div class="our-blog-content">
-        <img class="up" src="images/our-blog1.png">
-        <img class="down" src="images/our-blog2.png">
-        <div class="obc-ob">
-          <a href="#OurBlog">Our Blog</a>
-          <img class="img2" src="images/Arrow-1.svg">
+      <div class="content-grid__right-col">
+        <div class="blog-promo">
+          <img class="blog-promo__img--top" src="images/our-blog-upper.png">
+          <img class="blog-promo__img--bottom" src="images/our-blog-lower.png">
+          <div class="blog-promo__link-wrap">
+            <a href="#OurBlog">Our Blog<img src="icons/arrow.svg" alt="Our Blog"></a>
+          </div>
+        </div>
+        <div class="schedule-card">
+          <div class="schedule-card__header">Opening Hours</div>
+          <div class="schedule-card__body">
+            <p class="schedule-card__label">Open Today</p>
+            <p class="schedule-card__time">09:00 - 06:00 PM</p>
+          </div>
+          <div class="schedule-card__footer">
+            <a>See all schedule</a>
+            <img src="icons/arrow.svg">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="location-content">
+      <div class="location-content__left-col">
+        <div class="forecast__top">
+          <p>3 Day</p>
+          <span>Forecast</span>
+        </div>
+        <div class="forecast__bottom">
+          <div class="forecast__bottom-day">
+            <div class="forecast__temperature">
+              <img src="/icons/day1-weather.svg" alt="">
+              <span>71°</span>
+            </div>
+            <p class="forecast__day-of-the-week">Tuesday</p>
+          </div>
+          <div class="forecast__bottom-day">
+            <div class="forecast__temperature">
+              <img src="/icons/day2-weather.svg" alt="">
+              <span>68°</span>
+            </div>
+            <p class="forecast__day-of-the-week">Wednesday</p>
+          </div>
+          <div class="forecast__bottom-day">
+            <div class="forecast__temperature">
+              <img src="/icons/day3-weather.svg" alt="">
+              <span>56°</span>
+            </div>
+            <p class="forecast__day-of-the-week">Thursday</p>
+          </div>
+        </div>
+        <div class="route-explain-text">
+          <p>Bike park access is available via the shuttle service from The Village up to Main Lodge daily (9AM-5:30PM), the Panorama Gondola (daily) to the summit and Discovery (11) daily. Stump Alley Express (2) and Canyon Express (16) operate on weekends (Fri-Sun). Bike rentals are available at the Mountain Center in The Village and at Main Lodge. Please note e-bikes are only available at the Mountain Center at this time.</p>
+        </div>
+      </div>
+      <div class="location-content__right-col">
+        <img class="route-map__img" src="/images/route-map.png" alt="Route Map">
+      </div>
+    </section>
+    <section class="facilities-content">
+      <div class="facilities__nav-bar">
+        <div class="facilities__nav-left">
+          <h3>Events</h3>
+          <h4>Our Facilities</h4>
+        </div>
+        <div class="facilities__nav-right">
+          <div class="facilities__nav__stats-bar">
+            <span class="stats-bar1"></span>
+            <span class="stats-bar2"></span>
+            <span class="stats-bar3"></span>
+          </div>
+          <button class="facilities__left-btn"></button>
+          <button class="facilities__right-btn"></button>
+        </div>
+      </div>
+      <div class="facilities__services-cards">
+        <div class="facilities__card far-left-card">
+          <div class="service__card-num">01</div>
+          <div class="service-card__name-and-details">
+            <p>Camping</p>
+            <div class="service-card__action">
+              <a href="#details">See details<img src="icons/arrow.svg" alt="Details"></a>
+            </div>
+          </div>
+        </div>
+        <div class="facilities__card services-card__2nd service-card__active">
+          <div class="service__card-num">02</div>
+          <img class="service-card__biking-img" src="images/person-biking.png">
+          <div class="service-card__name-and-details">
+            <p>Mountain Biking</p>
+            <div class="service-card__action">
+              <a href="#details">See details<img src="icons/arrow.svg" alt="Details"></a>
+            </div>
+          </div>
+        </div>
+        <div class="facilities__card far-right-card ">
+          <div class="service__card-num">03</div>
+          <div class="service-card__name-and-details">
+            <p>Tracking</p>
+            <div class="service-card__action">
+              <a href="#details">See details<img src="icons/arrow.svg" alt="Details"></a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

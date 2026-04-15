@@ -1,0 +1,164 @@
+.facilities-content {
+  background-color: var(--neutral-black);
+  padding-left: 130px;
+  padding-right: 130px;
+  padding-bottom: 170px;
+}
+
+.facilities__nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 90px;
+}
+
+.facilities__nav-left {
+  h3 {
+    font-family: var(--third-family);
+    font-weight: 500;
+    line-height: 100%;
+    color: #FFFFFF;
+    opacity: 60%;
+    font-size: 26px;
+  }
+
+  h4 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    line-height: 84px;
+    color: var(--neutral-white);
+    font-size: 54px;
+  }
+}
+
+.facilities__nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 42px;
+
+  .facilities__nav__stats-bar {
+    display: flex;
+    gap: 0;
+    padding-right: 20px;
+    span {
+      display: inline-block;
+      background-color: var(--neutral-dark-blue-2);
+      height: 3px;
+      width:30px;
+    }
+  }
+  
+  .facilities__left-btn,
+  .facilities__right-btn {
+    border: 0px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--neutral-black);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+  }
+
+  .facilities__left-btn{
+    background-image: url(../icons/nav-arrow-left.svg);
+  }
+  .facilities__right-btn {
+    background-image: url(../icons/nav-arrow-right.svg);
+  }
+}
+
+.facilities__services-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1px;
+}
+
+.far-left-card {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.services-card__2nd {
+  position: relative;
+  overflow: hidden;
+  transition: ease-in-out 0.3s;
+  .service-card__biking-img {
+    object-fit: cover;
+    object-position: center;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    position: absolute;
+    right: -70px;
+    top: -40px;
+  }
+}
+
+.far-right-card {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.facilities__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--neutral-dark);
+  width: 421px;
+  height: 420px;
+  padding: 50px 0px 40px 40px;
+
+  .service__card-num  {
+    font-family: var(--font-family);
+    font-weight: 500;
+    line-height: 100%;
+    color:#FFFFFF;
+    opacity: 20%;
+    font-size: 90px;
+  }
+
+  .service-card__name-and-details {
+    p {
+      font-family: var(--font-family);
+      color: var(--neutral-white);
+      font-weight: 700;
+      line-height: 60px;
+      font-size: 52px;
+      padding-bottom: 20px;
+    }
+
+    .service-card__action {
+      display: flex;
+      align-items: center;
+      font-family: var(--font-family);
+      color: var(--neutral-white);
+      font-weight: 500;
+      line-height: 100%;
+      font-size: 18px;
+
+      img {
+        padding-left: 10px;
+        height: auto;
+        width: 50px;
+      }
+    }
+  }
+}
+
+.service-card__active {
+  background-color: var(--neutral-dark-green);
+  border-radius: 12px;
+  height: 510px;
+  a {
+    color: var(--primary-cyan);
+  }
+  box-shadow: 0 40px 80px -20px var(--neutral-dark-green);
+
+  .service-card__biking-img{
+    width: 290px;
+    height: 290px;
+  }
+}

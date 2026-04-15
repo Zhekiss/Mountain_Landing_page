@@ -139,13 +139,10 @@
       line-height: 100%;
       font-size: 18px;
 
-      a {
-        padding-right: 10px;
-      }
-
       img {
+        padding-left: 10px;
         height: auto;
-        width: 40px;
+        width: 50px;
       }
     }
   }

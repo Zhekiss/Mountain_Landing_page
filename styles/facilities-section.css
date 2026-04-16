@@ -2,7 +2,7 @@
   background-color: var(--neutral-black);
   padding-left: 130px;
   padding-right: 130px;
-  margin-bottom: 170px;
+  margin-bottom: 150px;
 }
 
 .facilities__nav-bar {
@@ -321,7 +321,7 @@
     a {
       color: var(--primary-cyan);
     }
-    box-shadow: 0 40px 80px -20px var(--neutral-dark-green);
+    box-shadow: 0 20px 80px -30px var(--neutral-dark-green);
 
     .service-card__biking-img{
       width: 290px;

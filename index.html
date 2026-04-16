@@ -174,12 +174,32 @@
     </section>
     <section class="about-section">
       <div class="about__left-col">
-        <div class="about__map-link">
-          <button class="about__map-btn white-blur-bg-linear-border">
-            <img class="about-btn__map-img" src="./images/map.png" alt="location-on-map">
-            <span>Beau Mountain</span>
-            <img class="about-btn__arrow-img" src="./icons/arrow-right-short.svg" alt="Enter">
-          </button>
+        <button class="about__map-btn white-blur-bg">
+          <div class="about-btn__map">
+            <img class="map-img" src="./images/map.png" alt="Map">
+            <div class="map-pin__container">
+              <img src="./icons/map-pin.svg" alt="Map">
+            </div>
+          </div>
+          <span>Beau Mountain</span>
+          <img class="about-btn__arrow-img" src="./icons/arrow-right-short.svg" alt="Enter">
+        </button>
+        <div class="about__numbers-info white-blur-bg">
+          <div class="numbers-info__today">
+            <span>Sunday - June 15, 2022</span>
+            <div class=".numbers-info__today__time-temp">
+              09:40AM
+              <div><img src="./icons/day2-weather.svg" alt="weather">68°</div>
+            </div>
+          </div>
+          <div class="numbers-info__distance">
+            <span class="distance__text">Distance</span>
+            <span class="distance__number">2,8KM</span>
+          </div>
+          <div class="numbers-info__height">
+            <span class="height__text">Height</span>
+            <span class="height__number">2,400 MDPL</span>
+          </div>
         </div>
       </div>
       <div class="about__right-col">

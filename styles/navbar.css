@@ -7,9 +7,9 @@
   color: var(--neutral-white);
   padding: 24px 140px;
   border-bottom: 1px solid var(--neutral-white);
-  height:min-content;
+  height: min-content;
 
-  a{
+  a {
     color: var(--neutral-white);
   }
 }
@@ -24,7 +24,7 @@
   p {
     white-space: nowrap;
     font-family: var(--font-family);
-    font-weight:700;
+    font-weight: 700;
     font-size: 16px;
     line-height: 100%;
     letter-spacing: 0%;
@@ -47,7 +47,7 @@
   font-family: var(--second-family);
 }
 
-.nav__item a{
+.nav__item a {
   display: inline-block;
   cursor: pointer;
   position: relative;
@@ -56,7 +56,7 @@
   font-family: var(--second-family);
   font-size: 14px;
   font-weight: 400;
-  
+
   &:hover {
     transform: scale(1.1);
     font-weight: 500;
@@ -64,7 +64,7 @@
   }
 }
 
-.btn-youtube{
+.btn-youtube {
   display: flex;
   gap: 16px;
   align-items: center;
@@ -91,9 +91,9 @@
     color: var(--neutral-white);
     padding: 24px 130px;
     border-bottom: 1px solid var(--neutral-white);
-    height:min-content;
+    height: min-content;
 
-    a{
+    a {
       color: var(--neutral-white);
     }
   }
@@ -108,7 +108,7 @@
     p {
       white-space: nowrap;
       font-family: var(--font-family);
-      font-weight:700;
+      font-weight: 700;
       font-size: 16px;
       line-height: 100%;
       letter-spacing: 0%;
@@ -131,7 +131,7 @@
     font-family: var(--second-family);
   }
 
-  .nav__item a{
+  .nav__item a {
     display: inline-block;
     cursor: pointer;
     position: relative;
@@ -148,7 +148,7 @@
     }
   }
 
-  .btn-youtube{
+  .btn-youtube {
     display: flex;
     gap: 16px;
     align-items: center;

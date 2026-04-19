@@ -1,17 +1,17 @@
 /*colors*/
 :root {
-	--primary-cyan: #16f1ff;
-	--primary-blue: #01a1ec;
-	--primary-green: #2aef84;
-	--effect-opacity-background: rgba(0, 0, 0, 0.2);
-	--neutral-white: #fff;
-	--neutral-black: #020e20;
-	--neutral-dark: #152742;
-	--neutral-dark-blue: #11327b;
-	--neutral-dark-blue-2: #35517d;
-	--neutral-dark-green: #06516e;
-	--neutral-dark-grey: #56597b;
-	--neutral-grey: #a4aac1;
+  --primary-cyan: #16f1ff;
+  --primary-blue: #01a1ec;
+  --primary-green: #2aef84;
+  --effect-opacity-background: rgba(0, 0, 0, 0.2);
+  --neutral-white: #fff;
+  --neutral-black: #020e20;
+  --neutral-dark: #152742;
+  --neutral-dark-blue: #11327b;
+  --neutral-dark-blue-2: #35517d;
+  --neutral-dark-green: #06516e;
+  --neutral-dark-grey: #56597b;
+  --neutral-grey: #a4aac1;
 }
 
 /*fonts*/
@@ -22,16 +22,16 @@
 }
 
 * {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-	color: var(--neutral-white);
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: var(--neutral-white);
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 li {
-	list-style: none;
+  list-style: none;
 }

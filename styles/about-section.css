@@ -33,6 +33,10 @@
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
+
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
   mask-composite: exclude;
 }
 
@@ -71,7 +75,6 @@
         width: inherit;
         height: inherit;
         border-radius: 6px;
-        z-index: 1;
       }
 
       .map-pin__container {
@@ -82,7 +85,6 @@
         border-radius: 50%;
         width: 25px;
         height: 25px;
-        z-index: 2;
         justify-self: center;
         align-self: center;
         box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, 0.25);

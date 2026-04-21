@@ -6,7 +6,6 @@
   justify-content: space-between;
   padding-bottom: 150px;
 
-
   .location-content__left-col {
     display: flex;
     flex-direction: column;
@@ -72,7 +71,7 @@
         height: auto;
         width: 40px;
       }
-    
+
       span {
         font-family: var(--font-family);
         font-weight: 600;
@@ -92,9 +91,9 @@
 }
 
 .route-explain-text {
-  max-width: 550px ;
+  max-width: 550px;
 
-  p{
+  p {
     color: var(--neutral-white);
     opacity: 80%;
     font-family: var(--second-family);
@@ -179,7 +178,7 @@
           height: auto;
           width: 40px;
         }
-      
+
         span {
           font-family: var(--font-family);
           font-weight: 600;
@@ -199,9 +198,9 @@
   }
 
   .route-explain-text {
-    max-width: 550px ;
-  
-    p{
+    max-width: 550px;
+
+    p {
       color: var(--neutral-white);
       opacity: 80%;
       font-family: var(--second-family);

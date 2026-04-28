@@ -48,10 +48,13 @@
             }
 
             .footer__socials-icons {
-                display: flex;
-                gap: 40px;
                 margin-top: auto;
                 padding: 0px 8px 8px 8px;
+
+                .footer__social-list {
+                    display: flex;
+                    gap: 40px;
+                }
 
                 img {
                     height: auto;
@@ -117,7 +120,7 @@
             width: max-content;
             gap: 20px;
 
-            li {
+            a {
                 font-family: var(--second-family);
                 font-weight: 400;
                 line-height: 36px;

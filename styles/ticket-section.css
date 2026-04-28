@@ -1,5 +1,5 @@
 .ticket-section {
-    margin-bottom: 150px;
+    margin-bottom: 128px;
     padding: 144px 130px 0px 130px;
     width: 100%;
     height: max-content;
@@ -107,7 +107,7 @@
 
 @media (width >= 1200px) {
     .ticket-section {
-        margin-bottom: 150px;
+        margin-bottom: 128px;
         padding: 144px 130px 0px 130px;
         width: 100%;
         height: max-content;

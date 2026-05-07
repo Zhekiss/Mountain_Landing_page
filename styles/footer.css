@@ -131,3 +131,91 @@
         }
     }
 }
+
+@media (width >= 1200px) {
+    .footer-section {
+        row-gap: 80px;
+        padding: 40px 130px 60px 130px;
+
+        .footer__content {
+            column-gap: 60px;
+
+            .footer__socials-col {
+                flex-basis: 350px;
+
+                .footer__brand {
+                    gap: 8px;
+                    padding-bottom: 20px;
+
+                    p {
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0%;
+                    }
+
+                    img {
+                        width: 18px;
+                        height: auto;
+                    }
+                }
+
+                .footer__quote {
+                    line-height: 26px;
+                    font-size: 14px;
+                }
+
+                .footer__socials-icons {
+                    margin-top: auto;
+                    padding: 0px 8px 8px 8px;
+
+                    .footer__social-list {
+                        gap: 40px;
+                    }
+
+                    img {
+                        height: auto;
+                        width: 18px;
+                    }
+                }
+            }
+
+            .footer__info-list {
+                h3 {
+                    padding-bottom: 16px;
+
+                    line-height: 24px;
+                    font-size: 16px;
+                }
+
+                a {
+                    line-height: 36px;
+                    font-size: 14px;
+                }
+            }
+
+            &::after {
+                bottom: -50px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                height: 1px;
+            }
+        }
+
+        .footer__privacy {
+            .copyright {
+                line-height: 36px;
+                font-size: 14px;
+            }
+
+            .copyright__terms {
+                gap: 20px;
+
+                a {
+                    line-height: 36px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

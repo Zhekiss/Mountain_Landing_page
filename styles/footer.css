@@ -4,7 +4,7 @@
     row-gap: 80px;
     padding: 40px 130px 60px 130px;
 }
-@media (width < 1200px) {
+@media (width >= 1200px) {
     .footer-section {
         row-gap: 80px;
         padding: 40px 130px 60px 130px;
@@ -29,7 +29,7 @@
         background-color: rgba(255, 255, 255, 0.3);
     }
 }
-@media (width < 1200px) {
+@media (width >= 1200px) {
     .footer__content {
         column-gap: 60px;
 
@@ -75,7 +75,7 @@
         height: auto;
     }
 }
-@media (width < 1200px) {
+@media (width >= 1200px) {
     .footer__brand {
         gap: 8px;
         padding-bottom: 20px;
@@ -101,7 +101,7 @@
 
     color: var(--neutral-grey);
 }
-@media (width < 1200px) {
+@media (width >= 1200px) {
     .footer__quote {
         font-size: 14px;
         line-height: 26px;
@@ -122,7 +122,7 @@
         width: 18px;
     }
 }
-@media (width < 1200px) {
+@media (width >= 1200px) {
     .footer__socials-icons {
         padding: 0px 8px 8px 8px;
 
@@ -162,7 +162,7 @@
         color: var(--neutral-grey);
     }
 }
-@media (width < 1200px) {
+@media (width >= 1200px) {
     .footer__info-list {
         h3 {
             padding-bottom: 16px;

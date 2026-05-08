@@ -21,6 +21,26 @@
         }
     }
 }
+@media (width >= 1200px) {
+    .location-content {
+        padding: 0px 130px;
+        gap: 0px;
+        margin-bottom: 150px;
+
+        .location-content__left-col {
+            min-width: 200px;
+            padding-top: 80px;
+            padding-right: 80px;
+        }
+
+        .location-content__right-col {
+            img {
+                width: 625px;
+                height: auto;
+            }
+        }
+    }
+}
 
 .forecast__top {
     display: flex;
@@ -48,44 +68,89 @@
         padding-left: 20px;
     }
 }
+@media (width >=1200px) {
+    .forecast__top {
+        padding-bottom: 50px;
+
+        p {
+            font-size: 30px;
+            line-height: 30px;
+            padding: 20px 28px 20px 28px;
+        }
+
+        span {
+            font-size: 28px;
+            line-height: 30px;
+            padding-left: 20px;
+        }
+    }
+}
 
 .forecast__bottom {
     display: flex;
     align-items: center;
     gap: 65px;
+}
+@media (width >= 1200px) {
+    .forecast__bottom {
+        gap: 65px;
+    }
+}
 
-    .forecast__bottom-day {
+.forecast__bottom-day {
+    height: auto;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.forecast__temperature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 30px;
+
+    img {
         height: auto;
-        width: max-content;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        width: 40px;
+    }
 
-        .forecast__temperature {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding-bottom: 30px;
+    span {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 30px;
+    }
+}
+@media (width >= 1200px) {
+    .forecast__temperature {
+        gap: 10px;
+        padding-bottom: 30px;
 
-            img {
-                height: auto;
-                width: 40px;
-            }
-
-            span {
-                font-family: var(--font-family);
-                font-weight: 600;
-                font-size: 42px;
-                line-height: 30px;
-            }
+        img {
+            height: auto;
+            width: 40px;
         }
 
+        span {
+            font-size: 42px;
+            line-height: 30px;
+        }
+    }
+}
+
+.forecast__day-of-the-week {
+    font-family: var(--font-family);
+    color: var(--neutral-white);
+    font-weight: 500;
+    font-size: 28px;
+    opacity: 80%;
+}
+@media (width >= 1200px) {
+    .forecast__bottom-day {
         .forecast__day-of-the-week {
-            font-family: var(--font-family);
-            color: var(--neutral-white);
-            font-weight: 500;
             font-size: 28px;
-            opacity: 80%;
         }
     }
 }
@@ -103,68 +168,7 @@
         padding-top: 50px;
     }
 }
-
 @media (width >= 1200px) {
-    .location-content {
-        padding: 0px 130px;
-        gap: 0px;
-        margin-bottom: 150px;
-
-        .location-content__left-col {
-            min-width: 200px;
-            padding-top: 80px;
-            padding-right: 80px;
-        }
-
-        .location-content__right-col {
-            img {
-                width: 625px;
-                height: auto;
-            }
-        }
-    }
-
-    .forecast__top {
-        padding-bottom: 50px;
-
-        p {
-            font-size: 30px;
-            line-height: 30px;
-            padding: 20px 28px 20px 28px;
-        }
-
-        span {
-            font-size: 28px;
-            line-height: 30px;
-            padding-left: 20px;
-        }
-    }
-
-    .forecast__bottom {
-        gap: 65px;
-
-        .forecast__bottom-day {
-            .forecast__temperature {
-                gap: 10px;
-                padding-bottom: 30px;
-
-                img {
-                    height: auto;
-                    width: 40px;
-                }
-
-                span {
-                    font-size: 42px;
-                    line-height: 30px;
-                }
-            }
-
-            .forecast__day-of-the-week {
-                font-size: 28px;
-            }
-        }
-    }
-
     .route-explain-text {
         max-width: 550px;
 

@@ -4,11 +4,6 @@
     flex-direction: column;
     align-items: center;
 }
-@media (width >= 1200px) {
-    .hero__content {
-        width: 100%;
-    }
-}
 
 .hero__title,
 .hero__subtitle {
@@ -24,24 +19,38 @@
     font-weight: 700;
     padding-top: 80px;
 }
+
+@media (width >= 1024px) {
+    .hero__title {
+        font-size: 30px;
+        line-height: 50px;
+        padding-top: 25px;
+    }
+}
+
 @media (width >= 1200px) {
     .hero__title {
         font-size: 40px;
         line-height: 64px;
-        font-weight: 700;
         padding-top: 50px;
     }
 }
 
 .hero__subtitle {
     font-size: 156px;
-    font-weight: 900;
     line-height: 100%;
 }
+
+@media (width >= 1024px) {
+    .hero__subtitle {
+        font-size: 75px;
+        line-height: 90%;
+    }
+}
+
 @media (width >= 1200px) {
     .hero__subtitle {
         font-size: 100px;
-        font-weight: 900;
         line-height: 100%;
     }
 }
@@ -58,18 +67,26 @@
     margin-top: 50px;
     margin-bottom: 70px;
     cursor: pointer;
-    background-image: url(../images/hero__play-btn.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 55%;
+
+    .btn-play-img {
+        width: 75%;
+        height: 75%;
+    }
 }
+@media (width >= 1024px) {
+    .hero__play-btn {
+        width: 85px;
+        height: 85px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+}
+
 @media (width >= 1200px) {
     .hero__play-btn {
         width: 110px;
         height: 110px;
         margin-top: 50px;
         margin-bottom: 70px;
-
-        background-size: 55%;
     }
 }

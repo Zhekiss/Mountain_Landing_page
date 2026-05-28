@@ -1,3 +1,7 @@
+* {
+    outline: 1px solid red;
+}
+
 :root {
     --content-grid-lf-padding: 130px;
 }

@@ -1,19 +1,16 @@
-:root {
-    --content-grid-lf-padding: 130px;
-}
-
 .content-grid {
     display: grid;
     width: 100%;
+    padding: 0;
 
     grid-template-columns:
-        var(--content-grid-lf-padding)
-        minmax(1fr, 2fr)
-        1fr
-        var(--content-grid-lf-padding);
+        minmax(20px, 0.15fr)
+        minmax(0, 1fr)
+        minmax(0, 1fr)
+        minmax(20px, 0.15fr);
+
     row-gap: 212px;
     column-gap: 10px;
-
     margin-bottom: 160px;
 }
 
@@ -140,7 +137,7 @@
         padding-bottom: 24px;
         font-family: var(--font-family);
         font-weight: 700;
-        font-size: 38px;
+        font-size: 35px;
         line-height: 40px;
         white-space: nowrap;
     }
@@ -170,7 +167,7 @@
 
         h3 {
             padding-bottom: 24px;
-            font-size: 38px;
+            font-size: 2.4rem;
             line-height: 40px;
         }
 
@@ -183,6 +180,14 @@
         p {
             font-size: 14px;
             line-height: 26px;
+        }
+    }
+}
+
+@media (width >= 1024px) {
+    .video-card__1024px {
+        h3 {
+            font-size: 2rem;
         }
     }
 }

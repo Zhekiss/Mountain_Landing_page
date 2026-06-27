@@ -4,6 +4,14 @@
     row-gap: 80px;
     padding: 40px 130px 60px 130px;
 }
+
+@media (width >= 1024px) {
+    .footer-section {
+        row-gap: 80px;
+        padding: 30px 85px 40px 85px;
+    }
+}
+
 @media (width >= 1200px) {
     .footer-section {
         row-gap: 80px;

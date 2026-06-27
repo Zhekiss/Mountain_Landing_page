@@ -4,6 +4,16 @@
     width: 100%;
     height: max-content;
 }
+
+@media (width >= 1024px) {
+    .ticket-section {
+        margin-bottom: 128px;
+        padding: 100px 85px 0px 85px;
+        width: 100%;
+        height: max-content;
+    }
+}
+
 @media (width >= 1200px) {
     .ticket-section {
         margin-bottom: 128px;

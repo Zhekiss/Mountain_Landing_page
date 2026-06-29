@@ -1,6 +1,5 @@
 body {
     box-sizing: border-box;
-    overflow-x: hidden;
     background-image:
         url(../images/background-img-upper.png),
         url(../images/background-img-lower.png);

@@ -413,9 +413,6 @@
 
 @media (width >= 1200px) {
     .blog-promo__link-wrap {
-        top: 30px;
-        right: 240px;
-
         a {
             font-size: 18px;
             line-height: 100%;

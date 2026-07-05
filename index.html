@@ -9,26 +9,39 @@
     <body>
         <header class="main-header">
             <nav class="nav">
+                <input type="checkbox" id="nav-toggle" class="nav__toggle" />
                 <div class="nav__brand">
                     <img src="icons/logo.svg" alt="Beau Montain" />
                     <p>Beau Mountain</p>
                 </div>
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home">Home</a></li>
-                    <li class="nav__item"><a href="#package">Package</a></li>
-                    <li class="nav__item"><a href="#ticket">Ticket</a></li>
-                    <li class="nav__item"><a href="#about-us">About us</a></li>
-                    <li class="nav__item">
-                        <a href="#contact-us">Contact Us</a>
-                    </li>
-                    <li class="nav__item"><a href="#blog">Blog</a></li>
-                </ul>
-                <div class="nav__action">
-                    <div class="btn-youtube">
-                        <img src="icons/youtube-icon.svg" />
-                        <a href="#youtube">Youtube</a>
+                <label for="nav-toggle" class="nav__hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home">Home</a></li>
+                        <li class="nav__item">
+                            <a href="#package">Package</a>
+                        </li>
+                        <li class="nav__item"><a href="#ticket">Ticket</a></li>
+                        <li class="nav__item">
+                            <a href="#about-us">About us</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact-us">Contact Us</a>
+                        </li>
+                        <li class="nav__item"><a href="#blog">Blog</a></li>
+                    </ul>
+                    <div class="nav__action">
+                        <div class="btn-youtube">
+                            <img src="icons/youtube-icon.svg" />
+                            <a href="#youtube">Youtube</a>
+                        </div>
                     </div>
                 </div>
+                <label for="nav-toggle" class="nav__overlay"></label>
             </nav>
 
             <div class="hero">

@@ -128,8 +128,6 @@
     }
 }
 
-/* ========== Hamburger menu — shared mobile/tablet ========== */
-
 .nav__toggle {
     display: none;
 }
@@ -158,11 +156,9 @@
 #nav-toggle:checked + .nav__brand + .nav__hamburger span:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
 }
-
 #nav-toggle:checked + .nav__brand + .nav__hamburger span:nth-child(2) {
     opacity: 0;
 }
-
 #nav-toggle:checked + .nav__brand + .nav__hamburger span:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
 }
@@ -177,7 +173,7 @@
     backdrop-filter: blur(8px);
     display: flex;
     flex-direction: column;
-    padding: 100px 32px 32px;
+    padding: 32px 32px 32px;
     transform: translateX(100%);
     transition: transform 0.3s ease;
     z-index: 1000;
@@ -204,7 +200,7 @@
 .nav__overlay {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.3);
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
@@ -218,8 +214,8 @@
 
 @media (width >= 768px) {
     .nav__menu {
-        width: 320px;
-        padding: 100px 40px 40px;
+        width: 280px;
+        padding: 76px 40px 22px;
     }
 
     .nav {
@@ -229,8 +225,8 @@
 
 @media (width >= 900px) {
     .nav__menu {
-        width: 360px;
-        padding: 100px 48px 48px;
+        width: 320px;
+        padding: 80px 48px 38px;
 
         .nav__list {
             row-gap: 28px;

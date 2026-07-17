@@ -14,6 +14,17 @@
     margin-bottom: 160px;
 }
 
+@media (width < 1024px) {
+    .content-grid {
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr;
+
+        padding: 0 48px;
+        row-gap: 80px;
+        column-gap: 0;
+    }
+}
+
 @media (width >= 1024px) {
     .content-grid {
         row-gap: 120px;
@@ -35,6 +46,13 @@
 
     grid-column: 2 / 3;
     grid-row: 1;
+}
+
+@media (width < 1024px) {
+    .video-card {
+        grid-column: 1;
+        grid-row: 1;
+    }
 }
 
 .video-card__media {
@@ -260,6 +278,13 @@
     }
 }
 
+@media (width < 1024px) {
+    .weather-widget {
+        grid-column: 1;
+        grid-row: 3;
+    }
+}
+
 @media (width >= 1024px) {
     .weather-widget {
         h3 {
@@ -350,12 +375,24 @@
     width: 28vw;
 
     padding-bottom: 32px;
+}
 
-    @media (width >= 1024px) {
+@media (width < 1024px) {
+    .blog-promo {
+        grid-column: 1;
+        grid-row: 2;
+        width: 48vw;
+    }
+}
+
+@media (width >= 1024px) {
+    .blog-promo {
         width: 37vw;
     }
+}
 
-    @media (width >= 1200px) {
+@media (width >= 1200px) {
+    .blog-promo {
         width: 28vw;
     }
 }
@@ -436,6 +473,14 @@
     white-space: nowrap;
     display: inline-block;
     width: 35vw;
+}
+
+@media (width < 1024px) {
+    .schedule-card {
+        grid-column: 1;
+        grid-row: 4;
+        width: 408px;
+    }
 }
 
 @media (width >= 1200px) {

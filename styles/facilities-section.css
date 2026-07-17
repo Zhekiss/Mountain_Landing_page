@@ -4,6 +4,13 @@
     margin-bottom: 150px;
 }
 
+@media (width < 1024px) {
+    .facilities-content {
+        padding: 0 48px;
+        margin-bottom: 130px;
+    }
+}
+
 @media (width >= 1024px) {
     .facilities-content {
         padding: 0 85px;

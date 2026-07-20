@@ -115,12 +115,22 @@
         font-size: 18px;
         line-height: 100%;
         padding-right: 10px;
+        transition: 0.3s ease-in-out;
     }
 
     img {
         padding-left: 10px;
         width: 50px;
         height: auto;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+.video-card__action a:hover {
+    color: var(--primary-cyan);
+
+    img {
+        transform: translateX(7px);
     }
 }
 
@@ -439,12 +449,24 @@
         font-size: 18px;
         line-height: 100%;
         white-space: nowrap;
+        transition: 0.3s ease-in-out;
     }
 
     img {
         padding-left: 10px;
         width: 50px;
         height: auto;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+.blog-promo__link-wrap:hover {
+    a {
+        color: var(--primary-cyan);
+
+        img {
+            transform: translateX(7px);
+        }
     }
 }
 
@@ -597,7 +619,6 @@
     padding-bottom: 20px;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
-    cursor: pointer;
 
     a {
         color: var(--primary-cyan);
@@ -605,12 +626,24 @@
         font-family: var(--font-family);
         font-weight: 700;
         font-size: 18px;
-        padding-right: 8px;
+
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
     }
 
     img {
+        padding-left: 8px;
         width: 37px;
         height: auto;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+.schedule-card__footer a:hover {
+    color: var(--neutral-white);
+
+    img {
+        transform: translateX(7px);
     }
 }
 

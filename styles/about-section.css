@@ -15,7 +15,7 @@
 @media (width < 1024px) {
     .about-section {
         padding: 0 48px;
-        margin-bottom: 120px;
+        margin-bottom: 100px;
     }
 }
 
@@ -81,6 +81,7 @@
     top: 260px;
     gap: 10px;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
 
     .about-btn__map {
         display: grid;
@@ -128,6 +129,23 @@
         width: 20px;
     }
 }
+
+.about__map-btn:hover {
+    background-color: var(--neutral-gray);
+    transform: scale(1.02);
+}
+
+@media (width < 1024px) {
+    .about__left-col {
+        padding-top: 100px;
+    }
+
+    .about__map-btn {
+        position: static;
+        margin-bottom: 50px;
+    }
+}
+
 @media (width >= 1200px) {
     .about__map-btn {
         width: min-content;
@@ -173,6 +191,12 @@
     top: 200px;
     height: 270px;
     width: 250px;
+}
+
+@media (width < 1024px) {
+    .about__numbers-info {
+        position: static;
+    }
 }
 
 @media (width >= 1024px) {
@@ -378,6 +402,14 @@
     color: var(--neutral-white);
 }
 
+@media (width < 1024px) {
+    .about__right-col {
+        width: 100%;
+        padding-top: 50px;
+        padding-left: 60px;
+    }
+}
+
 @media (width >= 1024px) {
     .about__right-col {
         width: 50%;
@@ -476,11 +508,21 @@
         font-weight: 700;
         line-height: 100%;
         font-size: 18px;
+        transition: 0.3s ease-in-out;
     }
     img {
         padding-left: 10px;
         height: auto;
         width: 50px;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+.right-col__action a:hover {
+    color: var(--neutral-white);
+
+    img {
+        transform: translateX(7px);
     }
 }
 

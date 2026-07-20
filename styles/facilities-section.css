@@ -118,6 +118,12 @@
         background-repeat: no-repeat;
         background-size: contain;
         cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .facilities__left-btn:hover,
+    .facilities__right-btn:hover {
+        transform: scale(1.2);
     }
 
     .facilities__left-btn {
@@ -297,14 +303,27 @@
         font-weight: 500;
         line-height: 100%;
         font-size: 18px;
+        a {
+            transition: 0.3s ease-in-out;
+        }
 
         img {
             padding-left: 10px;
             height: auto;
             width: 50px;
+            transition: 0.3s ease-in-out;
         }
     }
 }
+
+.service-card__action a:hover {
+    color: var(--primary-cyan);
+
+    img {
+        transform: translateX(7px);
+    }
+}
+
 @media (width < 1024px) {
     .service-card__name-and-details {
         p {
@@ -370,6 +389,10 @@
         color: var(--primary-cyan);
     }
     box-shadow: 0 40px 80px -20px var(--neutral-dark-green);
+}
+
+.service-card__active a:hover {
+    color: var(--neutral-white);
 }
 @media (width >= 1200px) {
     .service-card__active {

@@ -14,9 +14,34 @@
     }
 
     .location-content__right-col {
+        display: flex;
         img {
             width: 41vw;
             height: auto;
+        }
+    }
+}
+
+@media (width < 1024px) {
+    .location-content {
+        justify-content: end;
+        flex-direction: column;
+        row-gap: 60px;
+
+        padding: 0px 48px;
+        margin-bottom: 120px;
+
+        .location-content__left-col {
+            padding-top: 20px;
+            padding-right: 10px;
+        }
+
+        .location-content__right-col {
+            justify-content: flex-end;
+            img {
+                width: 60vw;
+                height: auto;
+            }
         }
     }
 }

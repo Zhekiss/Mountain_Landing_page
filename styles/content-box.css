@@ -14,6 +14,17 @@
     margin-bottom: 160px;
 }
 
+@media (width < 1024px) {
+    .content-grid {
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr;
+
+        padding: 0 48px;
+        row-gap: 80px;
+        column-gap: 0;
+    }
+}
+
 @media (width >= 1024px) {
     .content-grid {
         row-gap: 120px;
@@ -35,6 +46,13 @@
 
     grid-column: 2 / 3;
     grid-row: 1;
+}
+
+@media (width < 1024px) {
+    .video-card {
+        grid-column: 1;
+        grid-row: 1;
+    }
 }
 
 .video-card__media {
@@ -97,12 +115,22 @@
         font-size: 18px;
         line-height: 100%;
         padding-right: 10px;
+        transition: 0.3s ease-in-out;
     }
 
     img {
         padding-left: 10px;
         width: 50px;
         height: auto;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+.video-card__action a:hover {
+    color: var(--primary-cyan);
+
+    img {
+        transform: translateX(7px);
     }
 }
 
@@ -260,6 +288,13 @@
     }
 }
 
+@media (width < 1024px) {
+    .weather-widget {
+        grid-column: 1;
+        grid-row: 3;
+    }
+}
+
 @media (width >= 1024px) {
     .weather-widget {
         h3 {
@@ -350,12 +385,24 @@
     width: 28vw;
 
     padding-bottom: 32px;
+}
 
-    @media (width >= 1024px) {
+@media (width < 1024px) {
+    .blog-promo {
+        grid-column: 1;
+        grid-row: 2;
+        width: 48vw;
+    }
+}
+
+@media (width >= 1024px) {
+    .blog-promo {
         width: 37vw;
     }
+}
 
-    @media (width >= 1200px) {
+@media (width >= 1200px) {
+    .blog-promo {
         width: 28vw;
     }
 }
@@ -402,12 +449,24 @@
         font-size: 18px;
         line-height: 100%;
         white-space: nowrap;
+        transition: 0.3s ease-in-out;
     }
 
     img {
         padding-left: 10px;
         width: 50px;
         height: auto;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+.blog-promo__link-wrap:hover {
+    a {
+        color: var(--primary-cyan);
+
+        img {
+            transform: translateX(7px);
+        }
     }
 }
 
@@ -436,6 +495,14 @@
     white-space: nowrap;
     display: inline-block;
     width: 35vw;
+}
+
+@media (width < 1024px) {
+    .schedule-card {
+        grid-column: 1;
+        grid-row: 4;
+        width: 408px;
+    }
 }
 
 @media (width >= 1200px) {
@@ -552,7 +619,6 @@
     padding-bottom: 20px;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
-    cursor: pointer;
 
     a {
         color: var(--primary-cyan);
@@ -560,12 +626,24 @@
         font-family: var(--font-family);
         font-weight: 700;
         font-size: 18px;
-        padding-right: 8px;
+
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
     }
 
     img {
+        padding-left: 8px;
         width: 37px;
         height: auto;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+.schedule-card__footer a:hover {
+    color: var(--neutral-white);
+
+    img {
+        transform: translateX(7px);
     }
 }
 

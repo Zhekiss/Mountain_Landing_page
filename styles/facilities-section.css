@@ -11,6 +11,20 @@
     }
 }
 
+@media (width < 768px) {
+    .facilities-content {
+        padding: 0 26px;
+        margin-bottom: 130px;
+    }
+}
+
+@media (width < 425px) {
+    .facilities-content {
+        padding: 0 8px;
+        margin-bottom: 130px;
+    }
+}
+
 @media (width >= 1024px) {
     .facilities-content {
         padding: 0 85px;
@@ -29,6 +43,20 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 90px;
+}
+
+@media (width < 768px) {
+    .facilities__nav-bar {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-bottom: 30px;
+    }
+}
+
+@media (width < 425px) {
+    .facilities__nav-bar {
+        padding-bottom: 16px;
+    }
 }
 
 @media (width >= 1024px) {
@@ -133,6 +161,19 @@
         background-image: url(../icons/nav-arrow-right.svg);
     }
 }
+
+@media (width < 768px) {
+    .facilities__nav-right {
+        .facilities__nav__stats-bar {
+            display: none;
+        }
+    }
+
+    .facilities__nav__stats-bar {
+        display: none;
+    }
+}
+
 @media (width >= 1200px) {
     .facilities__nav-right {
         gap: 42px;
@@ -168,7 +209,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 440px;
+        height: 510px;
+    }
+}
+
+@media (width < 768px) {
+    .facilities__services-cards {
+        height: 420px;
     }
 }
 
@@ -257,6 +304,21 @@
 
         .service__card-num {
             font-size: 80px;
+        }
+    }
+}
+
+@media (width < 425px) {
+    .facilities__card {
+        padding: 25px 0px 25px 20px;
+
+        .service__card-num {
+            font-family: var(--font-family);
+            font-weight: 500;
+            line-height: 100%;
+            color: #ffffff;
+            opacity: 20%;
+            font-size: 90px;
         }
     }
 }
@@ -394,8 +456,10 @@
 .service-card__active a:hover {
     color: var(--neutral-white);
 }
-@media (width >= 1200px) {
+
+@media (width < 1024px) {
     .service-card__active {
-        height: 510px;
+        height: inherit;
+        width: 90%;
     }
 }

@@ -46,6 +46,41 @@
     }
 }
 
+@media (width < 768px) {
+    .location-content {
+        justify-content: end;
+        flex-direction: column;
+        row-gap: 40px;
+
+        padding: 0px 26px;
+        margin-bottom: 100px;
+
+        .location-content__left-col {
+            padding-top: 20px;
+            padding-right: 10px;
+        }
+
+        .location-content__right-col {
+            justify-content: center;
+            img {
+                width: 67vw;
+            }
+        }
+    }
+}
+
+@media (width < 425px) {
+    .location-content {
+        padding: 0 10px;
+
+        .location-content__right-col {
+            img {
+                width: 90vw;
+            }
+        }
+    }
+}
+
 @media (width >= 1024px) {
     .location-content {
         padding: 0px 85px;
@@ -106,7 +141,25 @@
     }
 }
 
-@media (width >=1024px) {
+@media (width < 768px) {
+    .forecast__top {
+        padding-bottom: 30px;
+
+        p {
+            font-size: 1.5rem;
+            line-height: 30px;
+            padding: 16px 24px 16px 24px;
+        }
+
+        span {
+            font-size: 1.625rem;
+            line-height: 30px;
+            padding-left: 20px;
+        }
+    }
+}
+
+@media (width >= 1024px) {
     .forecast__top {
         padding-bottom: 40px;
 
@@ -148,6 +201,12 @@
     gap: 65px;
 }
 
+@media (width < 768px) {
+    .forecast__bottom {
+        gap: 25px;
+    }
+}
+
 @media (width >= 1024px) {
     .forecast__bottom {
         gap: 25px;
@@ -184,6 +243,22 @@
         font-weight: 600;
         font-size: 42px;
         line-height: 30px;
+    }
+}
+
+@media (width < 768px) {
+    .forecast__temperature {
+        gap: 10px;
+        padding-bottom: 16px;
+
+        img {
+            width: 26px;
+        }
+
+        span {
+            font-size: 1.8rem;
+            line-height: 1.5;
+        }
     }
 }
 
@@ -228,6 +303,14 @@
     opacity: 80%;
 }
 
+@media (width < 768px) {
+    .forecast__bottom-day {
+        .forecast__day-of-the-week {
+            font-size: 1.2rem;
+        }
+    }
+}
+
 @media (width >= 1024px) {
     .forecast__bottom-day {
         .forecast__day-of-the-week {
@@ -255,6 +338,15 @@
         line-height: 26px;
         font-size: 14px;
         padding-top: 50px;
+    }
+}
+
+@media (width < 768px) {
+    .route-explain-text {
+        p {
+            padding-top: 20px;
+            font-size: 0.65rem;
+        }
     }
 }
 
